@@ -1,461 +1,662 @@
 /*Définition des polices personnalisées*/
 
-body,h1,h2,h3,h4,h5,h6,p,a,ul,li
-{
-   font-family: 'Raleway', sans-serif;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+  font-family: 'Raleway', sans-serif;
 }
 
+body {
+  margin: 50px 20px 0 50px;
+  /*margin: 50px;*/
+}
 
 /*Elémens principaux de la page*/
 
-#bloc_page
-{
-    width: 1199px;
-    margin: auto;
-    padding-left: 30px;
-    padding-right: 30px; 
-}
-section h1, footer h1, nav a
-{
-    font-family: 'Raleway', sans-serif;
+section h1,
+footer h1,
+nav a {
+  font-family: 'Raleway', sans-serif;
 }
 
-p,h4
-{
-    line-height: 5px;
-    
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-
-
-/*Header*/
-header
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
 
 /*Navigation*/
 
-nav ul
-{
-    list-style-type: none;
-    display: flex;
+nav ul li:hover {
+  border: solid 2px blue;
 }
 
-nav li
-{
-   
-    margin-right: 60px;
-    
+nav ul {
+  list-style-type: none;
+  display: flex;
 }
 
-nav a
-{
-    font-size: 1.1rem;
-    text-decoration: none;
+nav li {
+  margin-right: 60px;
 }
 
-/*Section recherche*/
-
-.around_input
-{
-    display: flex; 
-    padding-top: 15px;
-    padding-bottom: 30px;
-}
-.localisation
-{
-    color: #000;
-    /*font-size: 20px;*/
-    font-weight: bold;
-    border: 1px solid #F2F2F2;
-    padding: 6px;
-    background-color: #F2F2F2;
-    border-radius: 20% 0 0 20%;
+nav a {
+  font-size: 1.1rem;
+  text-decoration: none;
 }
 
-input[type="text"]
-{
-    padding:8px;
-    /*font-size: 20px;*/
-    margin-right: -20px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-family: 'Raleway', sans-serif;
-}
-#name
-{
-    font-weight: bold;
-    font-family: 'Raleway', sans-serif;
-}
+/* Section recherche */
 
-.button_1
-{
-    color: #fff;
-    /*font-size: 20px;*/
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    border: 1px solid #0065FC;
-    padding: 8px;
-    background-color: #0065FC;
-    border-radius: 0 20% 20% 0;
+.around_input {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.localisation {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+  padding: 0.9rem;
+  background-color: #f2f2f2;
+  border-radius: 0.6rem 0 0 0.6rem;
 }
 
-
-
-#resarch{
-    margin-top: 25px;
+input[type='text'] {
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-right: -20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-family: 'Raleway', sans-serif;
+}
+#name {
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
 }
 
-
-.filtre
-{
-    display: flex;
+.button_1 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  border: 1px solid #0065fc;
+  padding: 1rem;
+  background-color: #0065fc;
+  border-radius: 0 0.6rem 0.6rem 0;
 }
-.p_filtre
-{
-    padding-top: 15px;
-    padding-right: 15px;
+
+#resarch {
+  margin-top: 40px;
+}
+
+.elmt-1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.filtre {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.p_filtre {
+  padding-top: 10px;
+  padding-right: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 filtre {
-    border: 1px solid;
-    margin: 0.7rem 3rem 0.5rem 0.7rem;
-    display: inline-block;
-    padding-right: .75rem;
-    border-radius: 1rem;
-    font-family: 'Raleway', sans-serif;
+  border: 3px solid #f2f2f2;
+  margin: 0.6rem 2rem 0.5rem 0.6rem;
+  display: inline-block;
+  padding-right: 0.75rem;
+  border-radius: 3rem;
+  font-family: 'Raleway', sans-serif;
 }
 
-.links-1
-{
-    text-decoration: none;
+.links-1 {
+  text-decoration: none;
 }
-filtre:hover
-{
-    background-color: #DEEBFF;
+filtre:hover {
+  background-color: #deebff;
 }
 
-filtre::before{
-    background-color: #00b7ff;
-    border-radius: 50%;
-    display: inline-flex;
-    width: 2rem;
-    height: 2rem;
-    align-items: center;
-    justify-content: center;
-    margin-left: -.5rem;
-    margin-right: .5rem;
-    font-family: "Font Awesome 5 Free";
-    border: 1px solid #00b7ff;
-    font-weight: 900;
+filtre::before {
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  display: inline-flex;
+  width: 3.2rem;
+  height: 3.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: -0.5rem;
+  margin-right: 0.5rem;
+  font-family: 'Font Awesome 5 Free';
+  border: 1px solid #deebff;
+  font-weight: 900;
 }
 
 filtre.economique::before {
-    content:"\f53a"; 
+  content: '\f53a';
 }
 filtre.familliale::before {
-    content: "\f1ae";
+  content: '\f1ae';
 }
 filtre.romantique::before {
-    content: "\f004";
+  content: '\f004';
 }
 
 filtre.animaux::before {
-    content: "\f6d3";
+  content: '\f6d3';
 }
 
-/* Corps Section Hébergements à Marseilles*/
+/* Corps Section Hébergements à Marseilles */
 
-*#possibilities1
-{
-    display: flex;
-    justify-content: space-between;
-
+main {
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section#hebergements {
+  width: 63%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: -40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 1rem;
 }
 
-.z_text
-{
-    padding-left: 15px;
+section#hebergements a {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+section#hebergements section h1 {
+  width: 100%;
 }
 
-.links{
-    display: block;
-    text-decoration: none;
+article.cannebiere {
+  background: url('images/hebergements/4_small/Auberge La Cannebière.jpg') white
+    center;
 }
 
-.elmt-2 {
-    border-radius: 5%;
-    background-color: #F2F2F2;
-    width: 760px;
-    display: inline-block;
-    display: flex;
-    flex-direction: column; 
-    flex: 2;
+article.hotel_du_port {
+  background: url('images/hebergements/4_small/Hôtel\ du\ Port.jpg') white
+    center;
 }
 
-.picto_popular
-{
-    display: flex;
-
+article.hotel_les_mouettes {
+  background: url('images/hebergements/4_small/Hôtel\ Les\ mouettes.jpg') white
+    center;
 }
 
-.fas.fa-chart-line
-{
-    padding-top: 40px;
-    padding-left: 80px;
-    
-}
-.elmt-elmt-2{
-    padding-top: 10px;
-    padding-left: 40px;
+article.hotel_de_la_mer {
+  background: url('images/hebergements/4_small/Hôtel\ de\ la\ mer.jpg') white
+    center;
 }
 
-
-.fa_info
-{
-    display: flex;
-}
-.fas.fa-info-circle
-{
-    padding-top: 22px;
-    margin-right: 10px;
-    font-weight: 900;
+article.auberge_le_panier {
+  background: url('images/hebergements/4_small/Auberge\ Le\ Panier.jpg') white
+    center;
 }
 
-.img-accommodations
-{
-    width: 210px;
-    height: 90px;
-    border-radius: 10% 10% 0 0;
+article.hotel_chez_amina {
+  background: url('images/hebergements/4_small/Hôtel\ chez\ Amina.jpg') white
+    center;
 }
 
-ul
-{
-    list-style: none;
+section#hebergements article {
+  width: 30%;
+  margin-bottom: 1rem;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-radius: 1rem;
+  border: 3px solid white;
 }
 
-/*li.rad-accommodations 
-{
-    border: 5px solid #FFF;
-    float: left;
-    border-radius: 10%;
-    background-color: #FFF;
-}*/
-/*.rad-accommodations li
-{
-    padding-right: 20px;
-
-}*/
-
-#possibilities1 ul li
-{
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border: 5px solid #FFF;
-    float: left;
-    border-radius: 10%;
-    background-color: #FFF;
+section#hebergements article h4 {
+  background-color: white;
+  margin: 8rem 0 0 0;
+  padding-top: 1rem !important;
+  padding-left: 1rem !important;
+}
+section#hebergements article p {
+  background-color: white;
+  margin: 0;
+  padding-left: 1rem;
 }
 
-.elmt-elmt-2-2{
-    
-    padding-left: 40px;
+section#hebergements article h4,
+article p,
+article aside {
+  padding: 0.25rem;
 }
 
-/* Corps Section Les plus populaires */
-
-.elmt-3
-{
-    border-radius: 5%;
-    background-color: #F2F2F2;
-    flex: 1;
-    margin-left: 40px;
-}
-.rad-accommodations-1
-{
-    display: flex;
-}
-.sub-elmt-accommodations-1
-{
-    display: flex;
-}
-.img-accommodations-1
-{
-    width: 120px;
-    height: 120px;
-    border-radius: 10% 0 0 10%;
-}
-.sub-elmt-accommodations-1
-{
-    max-width: 325px;
-}
-.zone_text_2
-{
-    padding-left: 15px;
+section#hebergements article aside {
+  background-color: white;
+  display: block;
+  height: 1.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding-left: 1rem !important;
 }
 
-/* Corps Section Activités à Marseille */
-
-.activities
-{
-    display: flex;
-    justify-content: space-between;
-
+h1.elmt-elmt-2 {
+  width: 100%;
+  margin-left: -25px;
 }
 
+/* Section Populaires */
 
-#possibilities2 h4
-{
-    margin-left: 15px;
-}
-.carte
-{
-    width: 260px;
-    height: 400px;
-    border: solid 4px #F2F2F2;
-    box-shadow: 6px #F2F2F2;
-    border-radius: 10%;
-    margin-right: 25px;
+section#popular {
+  width: 30%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 1rem;
 }
 
-.image-accommodations-2
-{
-    width: 260px;
-    height: 350px;
-    border-radius: 10% 10% 0 0;
+section#popular h1 {
+  margin-left: -40px !important;
+  /*margin-bottom: 15px;*/
+  padding-top: 10px;
+}
+.chartline {
+  display: flex;
+  margin-bottom: -50px;
+}
+.chart_line {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-
-
-.carte_colomn
-{
-    width: 260px;
-    height: 400px;
-    margin-right: 25px;
-   
-}
-.carte_1
-{
-    width: 260px;
-    height: 240px;
-    border: solid 4px #F2F2F2;
-    box-shadow: 6px #F2F2F2;
-    border-radius: 10%;
-    margin-right: 25px;
-    margin-bottom: 25px;
+section#popular article {
+  width: 85%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-radius: 1rem;
+  border: 3px solid white;
+  margin: auto;
 }
 
-.image-accommodations-3
-{
-    width: 260px;
-    height: 160px;
-    border-radius: 10% 10% 0 0;
-  
+section#popular article h4 {
+  background-color: white;
+  margin: 0 0 0 8rem;
+  padding-left: 1rem;
+  padding-top: 0.9rem;
+  border-radius: 0 0.35rem 0 0;
 }
 
-.carte_2
-{
-    width: 260px;
-    height: 130px;
-    border: solid 4px #F2F2F2;
-    box-shadow: 6px #F2F2F2;
-    border-radius: 10%;
-    margin-right: 25px;
-    margin-bottom: 25px;
-}
-.image-accommodations-4
-{
-    width: 260px;
-    height: 90px;
-    border-radius: 10% 10% 0 0;
-}
-.carte_3
-{
-    width: 260px;
-    height: 400px;
-    border: solid 4px #F2F2F2;
-    box-shadow: 6px #F2F2F2;
-    border-radius: 10%;
-    margin-right: 25px;
+section#popular article p {
+  background-color: white;
+  margin: 0 0 0 8rem;
+  padding-left: 1rem;
 }
 
-.image-accommodations-5
-{
-    width: 260px;
-    height: 350px;
-    border-radius: 10% 10% 0 0;
+section#popular article aside {
+  background-color: white;
+  display: block;
+  height: 2rem;
+  border-radius: 0 0 0.5rem 0;
+  margin: 0 0 0 8rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
 }
 
-
-/* */
-
-.carte_colomn_2
-{
-    width: 260px;
-    height: 400px;
-    margin-right: 25px;
-   
-}
-.carte_5
-{
-    width: 260px;
-    height: 240px;
-    border: solid 4px #F2F2F2;
-    box-shadow: 6px #F2F2F2;
-    border-radius: 10%;
-    margin-right: 25px;
-    margin-bottom: 25px;
+.fas.fa-chart-line {
+  padding-top: 30px !important;
 }
 
-.image-accommodations-6
-{
-    width: 260px;
-    height: 160px;
-    border-radius: 10% 10% 0 0;
-  
+section#popular article.hotel_le_soleil_du_matin {
+  background: url('images/hebergements/4_small/Hôtel\ le\ soleil\ du\ matin.jpg')
+    white center;
+}
+section#popular article.au_coeur_de_leau_Chambre_dhote {
+  background: url("images/hebergements/4_small/Au\ coeur\ de\ l'eau\ chambres\ d'hôtes.jpg")
+    white center;
+}
+section#popular article.hotel_tout_bleu_et_blanc {
+  background: url('images/hebergements/4_small/Hôtel\ tout\ Bleu\ et\ Blanc.jpg')
+    white center;
 }
 
-.carte_6
-{
-    width: 260px;
-    height: 130px;
-    border: solid 4px #F2F2F2;
-    box-shadow: 6px #F2F2F2;
-    border-radius: 10%;
-    margin-right: 25px;
-    margin-bottom: 25px;
+/* Section Activités à Marseilles */
+
+.activities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.image-accommodations-6
-{
-    width: 260px;
-    height: 90px;
-    border-radius: 10% 10% 0 0;
+
+main section#activitesamarseilles {
+  width: 100%;
+  margin-left: -27px;
+  margin-top: 2.5rem;
+}
+
+main section#activitesamarseilles article {
+  width: 22%;
+  height: 404px;
+  margin-bottom: 1rem;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border: solid 4px #f2f2f2;
+}
+
+article.le_vieux_port,
+article.parc_national_des_calanques {
+  border-radius: 1.3rem;
+}
+
+article.fort_de_pomegues,
+article.iles_du_frioul,
+article.notre_dame,
+article.parc_longchamp {
+  border-radius: 1.3rem;
+}
+
+.vieux_port {
+  background-color: white;
+  margin-top: 22.2rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 1rem !important;
+  border: solid 4px white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.pomegues_frioul {
+  margin-bottom: 3rem;
+}
+.notredame_longchamp {
+  margin-bottom: 3rem;
+}
+
+section#activitesamarseilles .pomegues_frioul,
+.notredame_longchamp {
+  width: 22%;
+  height: 400px;
+  margin-bottom: 2rem;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+section#activitesamarseilles article.fort_de_pomegues {
+  width: auto;
+  height: 230px;
+}
+
+section#activitesamarseilles article.iles_du_frioul {
+  width: auto;
+  height: 150px;
+}
+
+section#activitesamarseilles article.notre_dame {
+  width: auto;
+  height: 190px;
+}
+
+section#activitesamarseilles article.parc_longchamp {
+  width: auto;
+  height: 190px;
+}
+
+.pomegues {
+  background-color: white;
+  margin-top: 11rem;
+  padding-top: 0.9rem !important;
+  padding-bottom: 0.9rem !important;
+  padding-left: 1rem !important;
+  border: solid 4px white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.ifrioul {
+  background-color: white;
+  margin-top: 6.3rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 1rem !important;
+  border: solid 4px white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.ifrioul1 {
+  background-color: white;
+  margin-top: 8rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 1rem !important;
+  border: solid 4px white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.notre_dame_la_garde,
+.p_lonchamp {
+  background-color: white;
+  margin-top: 8.8rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 1rem !important;
+  border: solid 4px white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+section#activitesamarseilles article.le_vieux_port {
+  background: url('images/activites/4_small/Vieux\ port.jpg') white center;
+}
+
+section#activitesamarseilles article.fort_de_pomegues {
+  background: url('images/activites/4_small/Fort\ de\ Pomègues.jpg') white
+    center;
+}
+
+section#activitesamarseilles article.iles_du_frioul {
+  background: url('images/activites/4_small/Îles\ du\ Frioul.jpg') white center;
+}
+
+section#activitesamarseilles article.parc_national_des_calanques {
+  background: url('images/activites/4_small/Parc\ National\ des\ Calanques.jpg')
+    white center;
+}
+
+section#activitesamarseilles article.notre_dame {
+  background: url('images/activites/4_small/Notre-Dame-de-la-Garde.jpg') white
+    center;
+}
+
+section#activitesamarseilles article.parc_longchamp {
+  background: url('images/activites/4_small/Parc\ Longchamp.jpg') white center;
+}
+
+.links {
+  display: block;
+  text-decoration: none;
+}
+
+.picto_popular {
+  display: flex;
+}
+
+.fas.fa-chart-line {
+  padding-top: 40px;
+  padding-left: 80px;
+}
+.elmt-elmt-2 {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.fa_info {
+  display: flex;
+}
+.fas.fa-info-circle {
+  padding-top: 22px;
+  margin-right: 10px;
+  font-weight: 900;
 }
 
 /* Footer */
 
-footer
-{
-    
-    display: flex;
-    height: 250px;
-    background-color: #F2F2F2;
-    margin-top: 40px;
-    line-height: 40px;
-    text-decoration: none;
-}
-footer h3
-{
-    margin-right: 30px;
-}
-footer p a
-{
-    text-decoration: none;
-}
-#about
-{
-    margin-right: 170px;
+footer {
+  display: flex;
+  height: 200px;
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  padding-left: 25px;
+
+  text-decoration: none;
 }
 
+footer h3 {
+  margin-right: 30px;
+}
+footer p a {
+  text-decoration: none;
+}
+#about {
+  margin-right: 170px;
+}
+
+/* @media */
+
+@media all and (max-width: 1024px) {
+  body {
+    width: auto;
+  }
+ .filtre {
+    display: block;
+  }
+
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  section#popular{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 0 0;
+  }
+
+  section#popular article{
+   
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+/*
+  section#popular h1{
+      margin-left: 0px !important;
+  }*/
+
+  section#hebergements {
+    order: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: auto;
+    background-color: white;
+    
+  }
+
+  section#hebergements article {
+    width: auto;
+    border: solid 4px #F2F2F2;
+  }
+
+  section#activitesamarseilles article {
+    width: auto;
+  }
+
+  section#activitesamarseilles {
+    order: 1;
+    width: auto;
+    margin-top: 10rem;
+  }
+
+  .activities {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  section#activitesamarseilles .pomegues_frioul, .notredame_longchamp {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+
+  section#activitesamarseilles article.le_vieux_port,
+  section#activitesamarseilles article.fort_de_pomegues,
+  section#activitesamarseilles article.parc_longchamp,
+  section#activitesamarseilles article.iles_du_frioul,
+  section#activitesamarseilles article.parc_national_des_calanques
+  {
+    height: 190px;
+    width: auto;
+    
+  }
+
+  .vieux_port {
+    background-color: white;
+    margin-top: 8.8rem;
+    padding-top: 0.5rem !important;
+    padding-bottom: 1rem !important;
+    padding-left: 1rem !important;
+    border: solid 4px white;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+.pomegues {
+    background-color: white;
+    margin-top: 8.8rem;
+    padding-top: 0.5rem !important;
+    padding-bottom: 1rem !important;
+    padding-left: 1rem !important;
+    border: solid 4px white;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .ifrioul {
+    background-color: white;
+    margin-top: 8.8rem;
+    padding-top: 0.5rem !important;
+    padding-bottom: 1rem !important;
+    padding-left: 1rem !important;
+    border: solid 4px white;
+    border-radius: 0 0 1rem 1rem;
+  }
+ 
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .chartline {
+    padding-bottom: 4.5rem;
+    margin-right: 4.5rem;
+    margin-left: 3.5rem;
+  }
+}
