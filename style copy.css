@@ -11,11 +11,11 @@ p,
 a,
 ul,
 li {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
-  margin: 0;
+  margin: 50px 20px 0 50px;
 }
 
 /*Elémens principaux de la page*/
@@ -23,7 +23,7 @@ body {
 section h1,
 footer h1,
 nav a {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Header */
@@ -32,44 +32,38 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-image: url(images/logo/Reservia.svg);
-  background-repeat: no-repeat;
-  background-position: 1rem 1rem;
-  padding-top:1.3rem;
 }
 
 /*Navigation*/
 
-nav {
-  flex-wrap: wrap;
-  width: 100%;
-  /* border: 1px solid; */
+/*nav ul li:hover {
+  border: solid 2px blue;
+}*/
+
+nav ul {
+  list-style-type: none;
   display: flex;
 }
 
+nav li {
+  padding: 1rem;
+  border-top:2px solid transparent;
+}
+
+nav li:hover{
+  border-top:2px solid blue;
+}
 
 nav a {
-  height: 3rem;
-  display: block;
   font-size: 1.1rem;
   text-decoration: none;
-  /* border: 1px solid; */
-  width:50%;
-  text-align:center;
-  border-bottom: 2px solid grey;
 }
 
-nav a:hover{
-  border-bottom : 2px solid blue;
+.onglet_1 a, .onglet_3 a{
+  color: #0065fc !important;
 }
-
-nav a.sinscrire {
-  order: -2;
-  margin-left: 50%;
-}
-
-nav a.sinscrire, nav a.sinscrire:hover{  
-  border-bottom: 2px solid transparent;
+.onglet_2 a{
+  color: #000 !important;
 }
 
 /* Section recherche */
@@ -89,32 +83,28 @@ nav a.sinscrire, nav a.sinscrire:hover{
   border-radius: 0.6rem 0 0 0.6rem;
 }
 
-input[type="text"] {
+input[type='text'] {
   padding: 1rem;
   font-size: 1.2rem;
   margin-right: -20px;
   border: 1px solid #ddd;
   border-radius: 2px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 #name {
   font-weight: bold;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
-.recherche {
+.button_1 {
   color: #fff;
   font-size: 1.2rem;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   border: 1px solid #0065fc;
   padding: 1rem;
   background-color: #0065fc;
   border-radius: 0 0.6rem 0.6rem 0;
-  /* content: "231231231"; */
-}
-.recherche::after{
-  content:"------";
 }
 
 #resarch {
@@ -143,7 +133,7 @@ filtre {
   display: inline-block;
   padding-right: 0.75rem;
   border-radius: 3rem;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .links-1 {
@@ -164,23 +154,23 @@ filtre::before {
   justify-content: center;
   margin-left: -0.5rem;
   margin-right: 0.5rem;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   border: 1px solid #deebff;
   font-weight: 900;
 }
 
 filtre.economique::before {
-  content: "\f53a";
+  content: '\f53a';
 }
 filtre.familliale::before {
-  content: "\f1ae";
+  content: '\f1ae';
 }
 filtre.romantique::before {
-  content: "\f004";
+  content: '\f004';
 }
 
 filtre.animaux::before {
-  content: "\f6d3";
+  content: '\f6d3';
 }
 
 /* Corps Section Hébergements à Marseilles */
@@ -214,32 +204,32 @@ section#hebergements section h1 {
 }
 
 article.cannebiere {
-  background: url("images/hebergements/4_small/Auberge La Cannebière.jpg") white
+  background: url('images/hebergements/4_small/Auberge La Cannebière.jpg') white
     center;
 }
 
 article.hotel_du_port {
-  background: url("images/hebergements/4_small/Hôtel\ du\ Port.jpg") white
+  background: url('images/hebergements/4_small/Hôtel\ du\ Port.jpg') white
     center;
 }
 
 article.hotel_les_mouettes {
-  background: url("images/hebergements/4_small/Hôtel\ Les\ mouettes.jpg") white
+  background: url('images/hebergements/4_small/Hôtel\ Les\ mouettes.jpg') white
     center;
 }
 
 article.hotel_de_la_mer {
-  background: url("images/hebergements/4_small/Hôtel\ de\ la\ mer.jpg") white
+  background: url('images/hebergements/4_small/Hôtel\ de\ la\ mer.jpg') white
     center;
 }
 
 article.auberge_le_panier {
-  background: url("images/hebergements/4_small/Auberge\ Le\ Panier.jpg") white
+  background: url('images/hebergements/4_small/Auberge\ Le\ Panier.jpg') white
     center;
 }
 
 article.hotel_chez_amina {
-  background: url("images/hebergements/4_small/Hôtel\ chez\ Amina.jpg") white
+  background: url('images/hebergements/4_small/Hôtel\ chez\ Amina.jpg') white
     center;
 }
 
@@ -347,7 +337,7 @@ section#popular article aside {
 }
 
 section#popular article.hotel_le_soleil_du_matin {
-  background: url("images/hebergements/4_small/Hôtel\ le\ soleil\ du\ matin.jpg")
+  background: url('images/hebergements/4_small/Hôtel\ le\ soleil\ du\ matin.jpg')
     white center;
 }
 section#popular article.au_coeur_de_leau_Chambre_dhote {
@@ -355,7 +345,7 @@ section#popular article.au_coeur_de_leau_Chambre_dhote {
     white center;
 }
 section#popular article.hotel_tout_bleu_et_blanc {
-  background: url("images/hebergements/4_small/Hôtel\ tout\ Bleu\ et\ Blanc.jpg")
+  background: url('images/hebergements/4_small/Hôtel\ tout\ Bleu\ et\ Blanc.jpg')
     white center;
 }
 
@@ -482,30 +472,30 @@ section#activitesamarseilles article.parc_longchamp {
 }
 
 section#activitesamarseilles article.le_vieux_port {
-  background: url("images/activites/4_small/Vieux\ port.jpg") white center;
+  background: url('images/activites/4_small/Vieux\ port.jpg') white center;
 }
 
 section#activitesamarseilles article.fort_de_pomegues {
-  background: url("images/activites/4_small/Fort\ de\ Pomègues.jpg") white
+  background: url('images/activites/4_small/Fort\ de\ Pomègues.jpg') white
     center;
 }
 
 section#activitesamarseilles article.iles_du_frioul {
-  background: url("images/activites/4_small/Îles\ du\ Frioul.jpg") white center;
+  background: url('images/activites/4_small/Îles\ du\ Frioul.jpg') white center;
 }
 
 section#activitesamarseilles article.parc_national_des_calanques {
-  background: url("images/activites/4_small/Parc\ National\ des\ Calanques.jpg")
+  background: url('images/activites/4_small/Parc\ National\ des\ Calanques.jpg')
     white center;
 }
 
 section#activitesamarseilles article.notre_dame {
-  background: url("images/activites/4_small/Notre-Dame-de-la-Garde.jpg") white
+  background: url('images/activites/4_small/Notre-Dame-de-la-Garde.jpg') white
     center;
 }
 
 section#activitesamarseilles article.parc_longchamp {
-  background: url("images/activites/4_small/Parc\ Longchamp.jpg") white center;
+  background: url('images/activites/4_small/Parc\ Longchamp.jpg') white center;
 }
 
 .links {
@@ -547,6 +537,7 @@ footer {
   margin-right: 1.1rem;
   padding-left: 25px;
   text-decoration: none;
+
 }
 
 footer h3 {
@@ -563,26 +554,28 @@ footer p a {
 /* @media */
 
 @media all and (max-width: 1024px) {
-/*   input[value="Rechercher"] {
+
+  input[value='Rechercher']{
     display: none;
-  } */
+  }
+
 
   body {
     width: auto;
   }
-  .filtre {
+ .filtre {
     display: block;
   }
-  .p_filtre {
-    padding-left: 1rem;
-  }
+.p_filtre{
+  padding-left: 1rem;
+}
   main {
     display: flex;
     flex-direction: column;
     width: auto;
   }
 
-  section#popular {
+  section#popular{
     width: auto;
     display: flex;
     flex-direction: column;
@@ -591,7 +584,8 @@ footer p a {
     margin-right: auto;
   }
 
-  section#popular article {
+  section#popular article{
+   
     justify-content: space-between;
     margin-bottom: 1rem;
   }
@@ -604,12 +598,13 @@ footer p a {
     width: auto;
     background-color: white;
     margin-left: -1.6rem;
-    margin-right: -1rem;
+    margin-right:-1rem ;
+    
   }
 
   section#hebergements article {
     width: auto;
-    border: solid 4px #f2f2f2;
+    border: solid 4px #F2F2F2;
   }
 
   section#activitesamarseilles article {
@@ -620,34 +615,38 @@ footer p a {
     order: 1;
     width: auto;
     margin-top: 10rem;
+   
   }
 
-  main section#activitesamarseilles h1 {
+  main section#activitesamarseilles h1{
     margin-left: 1.5rem !important;
-  }
+}
+
 
   .activities {
     display: flex;
     flex-direction: column;
     width: auto;
     margin-left: 1.2rem;
-    margin-right: -1.7rem;
+    margin-right:-1.7rem ;
   }
 
-  section#activitesamarseilles .pomegues_frioul,
-  .notredame_longchamp {
+  section#activitesamarseilles .pomegues_frioul, .notredame_longchamp {
     display: flex;
     flex-direction: column;
     width: auto;
   }
 
+
   section#activitesamarseilles article.le_vieux_port,
   section#activitesamarseilles article.fort_de_pomegues,
   section#activitesamarseilles article.parc_longchamp,
   section#activitesamarseilles article.iles_du_frioul,
-  section#activitesamarseilles article.parc_national_des_calanques {
+  section#activitesamarseilles article.parc_national_des_calanques
+  {
     height: 190px;
     width: auto;
+    
   }
 
   .vieux_port {
@@ -660,7 +659,7 @@ footer p a {
     border-radius: 0 0 1rem 1rem;
   }
 
-  .pomegues {
+.pomegues {
     background-color: white;
     margin-top: 8.8rem;
     padding-top: 0.5rem !important;
@@ -679,15 +678,15 @@ footer p a {
     border: solid 4px white;
     border-radius: 0 0 1rem 1rem;
   }
-
+ 
   footer {
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-left: -0.3rem;
+    margin-left: -.3rem;
   }
 
-  footer p a {
+  footer p a{
     width: 100%;
   }
 
@@ -696,38 +695,4 @@ footer p a {
     margin-right: 4.5rem;
     margin-left: 3.5rem;
   }
-
-@media screen AND (min-width:768px){
-/*   body {
-  margin: 50px 20px 0 50px;
-} */
-
-header{
-  padding:1rem;
-}
-
-nav{
-  justify-content:flex-end;
-}
-
-
-nav a {
-  width:20%;
-  border-top: 2px solid transparent;
-  border-bottom: none;
-}
-nav a:hover {
-  border-top: 2px solid blue;
-  border-bottom: none;
-}
-nav a.sinscrire{
-  order:initial;
-  margin:0
-}
-
-
-.recherche::after{
-  content:"rechercher";
-}
-
 }

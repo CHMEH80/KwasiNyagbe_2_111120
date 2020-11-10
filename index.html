@@ -5,25 +5,18 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2? family = Raleway: wght @ 100; 400 & display = swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
 </head>
 
 <body>
     <!--<div class="bloc_page">-->
         <header>
-            <div id="principal_title">
-                <div id="logo">
-                    <img src="images/logo/Reservia.svg" alt="Reservia" />
-                </div>
-            </div>
             <nav>
-                <ul id="containeronglet">
-                    <li class="onglet_1"><a href="#hebergements">Hébergement</a></li>
-                    <li class="onglet_2"><a href="#activitesamarseilles">Activités</a></li>
-                    <li class="onglet_3"><a href="">S'inscrire</a></li>
-                </ul>
+               <a href="#hebergements">Hébergement</a>
+               <a href="#activitesamarseilles">Activités</a>
+               <a href="" class="sinscrire">S'inscrire</a>
             </nav>
         </header>
         <section id="resarch">
@@ -33,7 +26,7 @@
                 <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
                 <form method="post" action="traitement.php">
                     <input type="text" id="name" value="Marseille, France">
-                    <input type="submit" value="Rechercher" class="button_1">
+                    <button class="recherche"></button>
                 </form>
             </div>
             <div class="filtre">
