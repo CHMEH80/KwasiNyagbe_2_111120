@@ -16,7 +16,6 @@ li {
 
 body {
   margin: 50px 20px 0 50px;
-  /*margin: 50px;*/
 }
 
 /*Elémens principaux de la page*/
@@ -37,9 +36,9 @@ header {
 
 /*Navigation*/
 
-nav ul li:hover {
+/*nav ul li:hover {
   border: solid 2px blue;
-}
+}*/
 
 nav ul {
   list-style-type: none;
@@ -53,6 +52,17 @@ nav li {
 nav a {
   font-size: 1.1rem;
   text-decoration: none;
+}
+
+.onglet_1 a{
+  border-top: solid 0.2rem  #0065fc !important ;
+  padding-top: 1.7rem;
+}
+.onglet_1 a, .onglet_3 a{
+  color: #0065fc !important;
+}
+.onglet_2 a{
+  color: #000 !important;
 }
 
 /* Section recherche */
@@ -250,6 +260,7 @@ article aside {
 }
 
 section#hebergements article aside {
+  color: #0065fc !important;
   background-color: white;
   display: block;
   height: 1.5rem;
@@ -262,7 +273,7 @@ h1.elmt-elmt-2 {
   margin-left: -25px;
 }
 
-/* Section Populaires */
+/* Corps Section Populaires */
 
 section#popular {
   width: 30%;
@@ -275,7 +286,6 @@ section#popular {
 
 section#popular h1 {
   margin-left: -40px !important;
-  /*margin-bottom: 15px;*/
   padding-top: 10px;
 }
 .chartline {
@@ -318,6 +328,7 @@ section#popular article aside {
   margin: 0 0 0 8rem;
   padding-top: 2rem;
   padding-left: 1rem;
+  color: #0065fc !important;
 }
 
 .fas.fa-chart-line {
@@ -337,7 +348,7 @@ section#popular article.hotel_tout_bleu_et_blanc {
     white center;
 }
 
-/* Section Activités à Marseilles */
+/* Corps Section Activités à Marseilles */
 
 .activities {
   display: flex;
@@ -489,6 +500,7 @@ section#activitesamarseilles article.parc_longchamp {
 .links {
   display: block;
   text-decoration: none;
+  color: #000;
 }
 
 .picto_popular {
@@ -520,15 +532,18 @@ footer {
   height: 200px;
   background-color: #f2f2f2;
   margin-top: 40px;
+  margin-left: -1rem;
+  margin-right: 1.1rem;
   padding-left: 25px;
-
   text-decoration: none;
+
 }
 
 footer h3 {
   margin-right: 30px;
 }
 footer p a {
+  color: black;
   text-decoration: none;
 }
 #about {
@@ -538,14 +553,33 @@ footer p a {
 /* @media */
 
 @media all and (max-width: 1024px) {
+
+  .onglet_1 a{
+    border-bottom: solid 0.2rem  #0065fc !important ;
+    padding-bottom: 1.7rem;
+    border-top: none !important;
+  }
+
+  .onglet_2 a{
+    border-bottom: solid 0.2rem  #F2F2F2 !important ;
+    padding-bottom: 1.7rem;
+   
+  }
+
+  input[value='Rechercher']{
+    display: none;
+  }
+
+
   body {
     width: auto;
   }
  .filtre {
     display: block;
   }
-
-  
+.p_filtre{
+  padding-left: 1rem;
+}
   main {
     display: flex;
     flex-direction: column;
@@ -557,6 +591,8 @@ footer p a {
     display: flex;
     flex-direction: column;
     border-radius: 0 0 0 0;
+    margin-left: -1.2rem;
+    margin-right: auto;
   }
 
   section#popular article{
@@ -564,10 +600,6 @@ footer p a {
     justify-content: space-between;
     margin-bottom: 1rem;
   }
-/*
-  section#popular h1{
-      margin-left: 0px !important;
-  }*/
 
   section#hebergements {
     order: 1;
@@ -576,6 +608,8 @@ footer p a {
     flex-direction: column;
     width: auto;
     background-color: white;
+    margin-left: -1.6rem;
+    margin-right:-1rem ;
     
   }
 
@@ -592,12 +626,20 @@ footer p a {
     order: 1;
     width: auto;
     margin-top: 10rem;
+   
   }
+
+  main section#activitesamarseilles h1{
+    margin-left: 1.5rem !important;
+}
+
 
   .activities {
     display: flex;
     flex-direction: column;
     width: auto;
+    margin-left: 1.2rem;
+    margin-right:-1.7rem ;
   }
 
   section#activitesamarseilles .pomegues_frioul, .notredame_longchamp {
@@ -652,6 +694,11 @@ footer p a {
     display: flex;
     flex-direction: column;
     height: auto;
+    margin-left: -.3rem;
+  }
+
+  footer p a{
+    width: 100%;
   }
 
   .chartline {
