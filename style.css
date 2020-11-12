@@ -1,5 +1,10 @@
 /*Définition des polices personnalisées*/
 
+*{
+ /* border: 1px solid;*/
+}
+
+
 body,
 h1,
 h2,
@@ -13,11 +18,11 @@ ul,
 li {
   font-family: "Raleway", sans-serif;
 }
-
+/*
 body {
-  margin: 0;
+  margin:  auto;
 }
-
+*/
 /*Elémens principaux de la page*/
 
 section h1,
@@ -110,11 +115,16 @@ input[type="text"] {
   border: 1px solid #0065fc;
   padding: 1rem;
   background-color: #0065fc;
-  border-radius: 0 0.6rem 0.6rem 0;
-  /* content: "231231231"; */
+  border-radius: 0 0.7rem 0.7rem 0;
+  font-family: "Font Awesome 5 Free";
+  border: 1px solid #deebff;
+  font-weight: 900;
 }
+
+
 .recherche::after{
-  content:"------";
+
+  content:"rechercher";
 }
 
 #resarch {
@@ -186,7 +196,7 @@ filtre.animaux::before {
 /* Corps Section Hébergements à Marseilles */
 
 main {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -197,7 +207,7 @@ section#hebergements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: -40px;
+  /*height: 690px;*/
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 1rem;
@@ -209,8 +219,10 @@ section#hebergements a {
   font-weight: bold;
   padding: 1.5rem;
 }
-section#hebergements section h1 {
+section#hebergements h1 {
   width: 100%;
+  padding-left: 1rem;
+  margin-top: 2rem;
 }
 
 article.cannebiere {
@@ -234,7 +246,7 @@ article.hotel_de_la_mer {
 }
 
 article.auberge_le_panier {
-  background: url("images/hebergements/4_small/Auberge\ Le\ Panier.jpg") white
+  background: url("images/hebergements/4_small/") white
     center;
 }
 
@@ -245,7 +257,7 @@ article.hotel_chez_amina {
 
 section#hebergements article {
   width: 30%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   border-radius: 1rem;
@@ -279,11 +291,12 @@ section#hebergements article aside {
   padding-left: 1rem !important;
 }
 
+/*
 h1.elmt-elmt-2 {
   width: 100%;
   margin-left: -25px;
 }
-
+*/
 /* Corps Section Populaires */
 
 section#popular {
@@ -293,12 +306,26 @@ section#popular {
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 1rem;
+  /*height: 690px;*/
 }
 
+
 section#popular h1 {
-  margin-left: -40px !important;
-  padding-top: 10px;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 2rem;
 }
+.progression{
+  display: flex;
+}
+
+.fas.fa-chart-line {
+  padding-top: 35px !important;
+  font-size: 1.5rem;
+  margin-left: 6rem;
+}
+
+/*
 .chartline {
   display: flex;
   margin-bottom: -50px;
@@ -307,9 +334,9 @@ section#popular h1 {
   font-weight: bold;
   font-size: 1.5em;
 }
-
+*/
 section#popular article {
-  width: 85%;
+  width: 78%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   border-radius: 1rem;
@@ -342,10 +369,21 @@ section#popular article aside {
   color: #0065fc !important;
 }
 
-.fas.fa-chart-line {
-  padding-top: 30px !important;
+section#popular article.hotel_le_soleil_du_matin{
+  /*margin-bottom: 1.3rem;
+  margin-top: -.6rem;*/
+
+ }
+
+section#popular article.au_coeur_de_leau_Chambre_dhote{
+  /* margin-top: -1.5rem;*/
+}
+section#popular article.hotel_tout_bleu_et_blanc{
+  /*margin-bottom: 1.5rem;*/
 }
 
+
+ 
 section#popular article.hotel_le_soleil_du_matin {
   background: url("images/hebergements/4_small/Hôtel\ le\ soleil\ du\ matin.jpg")
     white center;
@@ -361,20 +399,22 @@ section#popular article.hotel_tout_bleu_et_blanc {
 
 /* Corps Section Activités à Marseilles */
 
+main section#activitesamarseilles h1 {
+  margin-left: 1rem;
+}
 .activities {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 main section#activitesamarseilles {
   width: 100%;
-  margin-left: -27px;
   margin-top: 2.5rem;
 }
 
 main section#activitesamarseilles article {
-  width: 22%;
+  width: 24%;
   height: 404px;
   margin-bottom: 1rem;
   background-size: cover !important;
@@ -421,7 +461,7 @@ section#activitesamarseilles .pomegues_frioul,
 }
 
 section#activitesamarseilles article.fort_de_pomegues {
-  width: auto;
+ width: auto;
   height: 230px;
 }
 
@@ -517,16 +557,18 @@ section#activitesamarseilles article.parc_longchamp {
 .picto_popular {
   display: flex;
 }
-
+/*
 .fas.fa-chart-line {
   padding-top: 40px;
   padding-left: 80px;
 }
+*/
+/*
 .elmt-elmt-2 {
   padding-top: 10px;
   padding-left: 40px;
 }
-
+*/
 .fa_info {
   display: flex;
 }
@@ -543,8 +585,8 @@ footer {
   height: 200px;
   background-color: #f2f2f2;
   margin-top: 40px;
-  margin-left: -1rem;
-  margin-right: 1.1rem;
+  /*margin-left: -1rem;
+  margin-right: 1.1rem;*/
   padding-left: 25px;
   text-decoration: none;
 }
@@ -562,17 +604,54 @@ footer p a {
 
 /* @media */
 
+
 @media all and (max-width: 1024px) {
-/*   input[value="Rechercher"] {
-    display: none;
-  } */
+
+  *{
+    margin: 0;
+  }
+  .recherche {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    border: 1px solid #0065fc;
+    padding: 1rem;
+    background-color: #0065fc;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+    font-family: "Font Awesome 5 Free";
+    border: 1px solid #deebff;
+    font-weight: 900;
+    /* content: "231231231"; */
+  }
+
+  .recherche::after{
+
+    content:"\f002";
+  }
+
+  .filtre {
+    display: flex-inline;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 
   body {
     width: auto;
   }
+  
   .filtre {
     display: block;
   }
+
+  filtre {
+    margin: 0.6rem 2rem 0.5rem 0.6rem;
+    display: inline-block;
+    padding-right: 0.75rem;
+    border-radius: 3rem;
+    font-family: "Raleway", sans-serif;
+  }
+
   .p_filtre {
     padding-left: 1rem;
   }
@@ -589,10 +668,39 @@ footer p a {
     border-radius: 0 0 0 0;
     margin-left: -1.2rem;
     margin-right: auto;
+    /*height: auto;*/
   }
 
+  section#popular h1 {
+    margin-left: 40px !important;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    padding-left: 0rem;
+  }
+
+
+  .fas.fa-chart-line {
+    padding-top: 35px !important;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  /*
+  h1.elmt-elmt-2 {
+    width: 100%;
+    margin-left: 40px;
+  }
+*/
+/*
+  .elmt-elmt-2 {
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+*/
   section#popular article {
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin-bottom: 1rem;
   }
 
@@ -604,16 +712,27 @@ footer p a {
     width: auto;
     background-color: white;
     margin-left: -1.6rem;
-    margin-right: -1rem;
+    /*margin-right: -1rem;*/
+    /*height: auto;*/
+  }
+
+  section#hebergements a {
+    padding: 1.5rem 0 0 0;
+    text-align: center;
+    margin-left: -5rem;
+  }
+
+  section#hebergements h1 {
+    width: 100%;
+    text-align: center;
+    padding-left: 0rem;
   }
 
   section#hebergements article {
     width: auto;
     border: solid 4px #f2f2f2;
-  }
-
-  section#activitesamarseilles article {
-    width: auto;
+    margin-left: 2.5rem;
+    margin-right: 1.3rem;
   }
 
   section#activitesamarseilles {
@@ -622,16 +741,27 @@ footer p a {
     margin-top: 10rem;
   }
 
+  main section#activitesamarseilles article {
+    margin-bottom: 1rem;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border: solid 4px #f2f2f2;
+    width: auto;
+    margin-left: 2.5rem;
+    margin-right: 1.3rem;
+  }
+  
   main section#activitesamarseilles h1 {
-    margin-left: 1.5rem !important;
+    text-align: center;
+    margin-left: -5rem;
   }
 
   .activities {
     display: flex;
     flex-direction: column;
     width: auto;
-    margin-left: 1.2rem;
-    margin-right: -1.7rem;
+    /*margin-left: 1.2rem;
+    margin-right: -1.7rem;*/
   }
 
   section#activitesamarseilles .pomegues_frioul,
@@ -647,8 +777,47 @@ footer p a {
   section#activitesamarseilles article.iles_du_frioul,
   section#activitesamarseilles article.parc_national_des_calanques {
     height: 190px;
-    width: auto;
+    /*width: auto;*/
   }
+
+  section#activitesamarseilles .pomegues_frioul,
+  .notredame_longchamp {
+    /*width: 22%;*/
+   /* height: 400px;*/
+    margin-bottom: 2rem;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  section#activitesamarseilles article.fort_de_pomegues {
+   /*width: auto;
+    height: 230px;*/
+  }
+  
+  section#activitesamarseilles article.iles_du_frioul {
+    /*width: auto;
+    height: 150px;*/
+  }
+  
+  section#activitesamarseilles article.notre_dame {
+    /*width: auto;
+    height: 190px;*/
+  }
+  
+  section#activitesamarseilles article.parc_longchamp {
+    /*width: auto;
+    height: 190px;*/
+  }
+  
+  .pomegues_frioul {
+    margin-bottom: 3rem;
+  }
+  .notredame_longchamp {
+    margin-bottom: 3rem;
+  }
+  
+
+
 
   .vieux_port {
     background-color: white;
@@ -685,10 +854,11 @@ footer p a {
     flex-direction: column;
     height: auto;
     margin-left: -0.3rem;
+    line-height: 2rem;
   }
 
   footer p a {
-    width: 100%;
+    width: auto;
   }
 
   .chartline {
@@ -697,10 +867,9 @@ footer p a {
     margin-left: 3.5rem;
   }
 
+
 @media screen AND (min-width:768px){
-/*   body {
-  margin: 50px 20px 0 50px;
-} */
+
 
 header{
   padding:1rem;
