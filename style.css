@@ -1,5 +1,9 @@
 /*Définition des polices personnalisées*/
-
+/*
+*{
+  border: solid 1px;
+}
+*/
 
 body,
 h1,
@@ -38,17 +42,12 @@ header {
   background-position: 1rem 1rem;
   padding: 1rem;
 }
-/*
-header{
-  padding:1rem;
-}
-*/
+
 /*Navigation*/
 
 nav {
   flex-wrap: wrap;
   width: 100%;
-  /* border: 1px solid; */
   display: flex;
   justify-content:flex-end;
   margin-top: 1rem;
@@ -61,47 +60,21 @@ nav a {
   display: block;
   font-size: 1.1rem;
   text-decoration: none;
-  /*border: 1px solid; */
   width:13%;
   text-align:center;
   padding-top: 1rem;
   border-top: 2px solid transparent;
 }
-/*
-nav a.hebergement{
 
-  border-top: 2px solid #0065fc;
-}
-*/
 
 nav a:hover{
   border-top : 2px solid #0065fc;
 }
-/*
-nav a.sinscrire {
-  order: -2;
-  margin-left: 50%;
-}
-
-nav a.sinscrire, nav a.sinscrire:hover{  
-  border-bottom: 2px solid transparent;
-}*/
 
 
 nav a.sinscrire{
   order:initial;
 }
-/*
-nav a {
-  width:20%;
-  border-top: 2px solid transparent;
-  border-bottom: none;
-}
-nav a:hover {
-  border-top: 2px solid blue;
-  border-bottom: none;
-}
-*/
 
 /* Section recherche */
 
@@ -234,7 +207,6 @@ section#hebergements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /*height: 690px;*/
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 1rem;
@@ -318,14 +290,6 @@ section#hebergements article aside {
   padding-left: 1rem !important;
 }
 
-/*
-h1.elmt-elmt-2 {
-  width: 100%;
-  margin-left: -25px;
-}
-*/
-/* Corps Section Populaires */
-
 section#popular {
   width: 30%;
   background-color: #f2f2f2;
@@ -333,7 +297,6 @@ section#popular {
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 1rem;
-  /*height: 690px;*/
 }
 
 
@@ -352,16 +315,6 @@ section#popular h1 {
   margin-left: 6rem;
 }
 
-/*
-.chartline {
-  display: flex;
-  margin-bottom: -50px;
-}
-.chart_line {
-  font-weight: bold;
-  font-size: 1.5em;
-}
-*/
 section#popular article {
   width: 78%;
   background-size: cover !important;
@@ -569,18 +522,7 @@ section#activitesamarseilles article.parc_longchamp {
 .picto_popular {
   display: flex;
 }
-/*
-.fas.fa-chart-line {
-  padding-top: 40px;
-  padding-left: 80px;
-}
-*/
-/*
-.elmt-elmt-2 {
-  padding-top: 10px;
-  padding-left: 40px;
-}
-*/
+
 .fa_info {
   display: flex;
 }
@@ -593,36 +535,46 @@ section#activitesamarseilles article.parc_longchamp {
 /* Footer */
 
 footer {
+
   display: flex;
-  height: 200px;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: #f2f2f2;
   margin-top: 40px;
-  /*margin-left: -1rem;
-  margin-right: 1.1rem;*/
+  padding-bottom: 40px;
   padding-left: 25px;
   text-decoration: none;
 }
 
-footer h3 {
-  margin-right: 30px;
+footer section
+ {
+  display: flex;
+  flex-direction: column;
+  margin-left: -18rem;
+  line-height: 2rem;  
 }
-footer p a {
+
+footer a {
   color: black;
   text-decoration: none;
 }
-#about {
-  margin-right: 170px;
+
+footer h3{
+  padding-top: 1rem;
 }
 
 /* @media */
 
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 767px) {
 
   *{
     margin: 0;
   }
 
+  header{
+    padding: 0;
+  }
   nav{
     margin-top: -1rem;
     margin-left: 0px;
@@ -634,16 +586,17 @@ footer p a {
     display: block;
     font-size: 1.1rem;
     text-decoration: none;
-    /* border: 1px solid; */
     width:50%;
     text-align:center;
-    border-bottom: 2px solid grey;
+    border-bottom: 3px solid #F2F2F2;
   }
   
   nav a:hover{
-    border-bottom : 2px solid #0065fc;
+    border-top: 3px solid transparent;
+    border-bottom : 3px solid #0065fc;
   }
   
+
   nav a.sinscrire {
     order: -2;
     margin-left: 50%;
@@ -655,11 +608,9 @@ footer p a {
 
   nav a.sinscrire {
     margin-top: .7rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
 }
-/*
-nav a.activites{
-  margin-left: -1.5rem
-}*/
 
   section#resarch{
     margin-left: 1.2rem;
@@ -684,7 +635,6 @@ nav a.activites{
     font-family: "Font Awesome 5 Free";
     border: 1px solid #deebff;
     font-weight: 900;
-    /* content: "231231231"; */
   }
 
   .recherche::after{
@@ -693,30 +643,29 @@ nav a.activites{
   }
 
   .filtre {
-    display: flex-inline;
+    display: block;
     font-size: 1.2rem;
     font-weight: bold;
   }
 
-  body {
-    width: auto;
-  }
-  
-  .filtre {
-    display: block;
+  .p_filtre {
+    padding: 0 1.2rem .8rem .5rem ;
   }
 
   filtre {
-    margin: 0.6rem 2rem 0.5rem 0.6rem;
+    border: 2px solid #f2f2f2;
+    margin: .5rem .5rem 0.5rem 0.6rem;
     display: inline-block;
     padding-right: 0.75rem;
     border-radius: 3rem;
     font-family: "Raleway", sans-serif;
   }
-
-  .p_filtre {
-    padding-left: 1rem;
+ 
+  filtre::before {
+    width: 2.2rem;
+    height: 2.2rem;
   }
+
   .fa_info h4{
     margin: 1rem 0 1.5rem .5rem;
   }
@@ -772,6 +721,7 @@ nav a.activites{
   section#popular article {
     /*justify-content: space-between;*/
     margin-bottom: 1rem;
+    margin-left: 3rem;
   }
 
   section#hebergements {
@@ -804,6 +754,7 @@ nav a.activites{
     border: solid 4px #f2f2f2;
     margin-left: 2.5rem;
     margin-right: 1.3rem;
+    margin-bottom: 1rem;
   }
 
   section#activitesamarseilles {
@@ -818,8 +769,8 @@ nav a.activites{
     background-repeat: no-repeat !important;
     border: solid 4px #f2f2f2;
     width: auto;
-    margin-left: 2.5rem;
-    margin-right: 1.3rem;
+    margin-left: 2rem;
+    margin-right: 2.3rem;
   }
   
   main section#activitesamarseilles h1 {
@@ -865,13 +816,13 @@ nav a.activites{
     margin-bottom: 3rem;
   }
   .notredame_longchamp {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   
 
 
 
-  .vieux_port {
+  .vieux_port,  .pomegues,  .ifrioul {
     background-color: white;
     margin-top: 8.8rem;
     padding-top: 0.5rem !important;
@@ -880,7 +831,7 @@ nav a.activites{
     border: solid 4px white;
     border-radius: 0 0 1rem 1rem;
   }
-
+/*
   .pomegues {
     background-color: white;
     margin-top: 8.8rem;
@@ -900,19 +851,33 @@ nav a.activites{
     border: solid 4px white;
     border-radius: 0 0 1rem 1rem;
   }
+*/
 
   footer {
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-left: -0.3rem;
-    line-height: 2rem;
-    margin-top: 0;
-    padding-top: 2rem;
+    background-color: #f2f2f2;
+    margin-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
   }
 
-  footer p a {
-    width: auto;
+  footer section {
+    line-height: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    line-height: 2rem;
+}
+
+  footer a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  footer h3{
+    padding-top: 1rem;
   }
 
   .chartline {
@@ -920,9 +885,11 @@ nav a.activites{
     margin-right: 4.5rem;
     margin-left: 3.5rem;
   }
+
 }
 
-@media screen AND (min-width:768px) {
+
+@media (min-width:768px) AND (max-width: 1024px) {
 
 
 header{
@@ -951,4 +918,213 @@ nav a.sinscrire{
   content:"rechercher";
 }
 
+
+
+.filtre {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
+
+.p_filtre {
+  padding: 0 1.2rem .8rem .5rem ;
+}
+
+filtre {
+  border: 2px solid #f2f2f2;
+  margin: .5rem .5rem 0.5rem 0.6rem;
+  display: inline-block;
+  padding-right: 0.75rem;
+  border-radius: 3rem;
+  font-family: "Raleway", sans-serif;
+}
+
+filtre::before {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section#hebergements {
+  width: auto;
+}
+
+section#popular {
+  width: auto;
+  margin-top: 2rem;
+}
+
+section#popular h1 {
+  margin-bottom: 24px;
+  padding-left: 1.2rem;
+}
+.progression{
+  width: 100%;
+}
+
+.fas.fa-chart-line {
+  margin-left: -5rem;
+}
+
+section#popular article {
+  width: 30%;
+  margin-bottom: 1.5rem;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-radius: 1rem;
+  border: 3px solid white;
+  height: 236px;
+}
+
+
+
+section#popular article h4 {
+  background-color: white;
+  margin: 8rem 0 0 0;
+  padding-top: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.hotel_le_soleil_du_matin aside, .hotel_tout_bleu_et_blanc aside {
+  padding-top: 1.2rem !important;
+}
+
+section#popular article p {
+  background-color: white;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+section#popular article h4, article p, article aside{
+  padding: .25rem;
+}
+
+section#popular article aside {
+  color: #0065fc !important;
+  background-color: white;
+  display: block;
+  height: 1.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 0;
+  padding: 0 0 0 .9rem;
+}
+ 
+
+
+main section#activitesamarseilles{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+main section#activitesamarseilles article {
+
+  margin-bottom: 1rem;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border: solid 4px #f2f2f2;
+  width: auto;
+}
+
+main section#activitesamarseilles h1 {
+  margin-bottom: 1.5rem;
+  
+}
+
+.activities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: initial;
+}
+
+section#activitesamarseilles .pomegues_frioul,
+section#activitesamarseilles .notredame_longchamp {
+  width: 100%;
+  height: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: -13.4rem !important;
+ 
+}
+
+.le_vieux_port, .parc_national_des_calanques{
+  margin-left: 1rem !important;
+}
+
+.fort_de_pomegues{
+  margin-left: 1rem !important;
+}
+
+.iles_du_frioul, .parc_longchamp{
+  margin-left: 1rem !important;
+  
+}
+
+
+section#activitesamarseilles article.le_vieux_port,
+section#activitesamarseilles article.fort_de_pomegues,
+section#activitesamarseilles article.parc_longchamp,
+section#activitesamarseilles article.iles_du_frioul,
+section#activitesamarseilles article.parc_national_des_calanques,
+section#activitesamarseilles article.notre_dame {
+  height: 190px;
+  width: 30%;
+}
+
+
+
+section#activitesamarseilles .pomegues_frioul,
+.notredame_longchamp {
+
+  margin-bottom: 2rem;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.pomegues_frioul {
+  margin-bottom: 3rem;
+}
+.notredame_longchamp {
+  margin-bottom: 2rem;
+}
+
+
+
+
+.vieux_port, .pomegues, .ifrioul {
+  background-color: white;
+  margin-top: 8.8rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 1rem !important;
+  border: solid 4px white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+  
+
+footer section
+ {
+  margin: auto auto auto 0rem;
+}
+
+
+}
+/*
+@media (max-width: 1024px){
+  
+.au_coeur_de_leau_Chambre_dhote aside {
+  padding-top: 1.2rem !important;
+}
+}
+
+*/
