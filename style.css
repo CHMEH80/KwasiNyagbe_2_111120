@@ -1,11 +1,5 @@
 /*Définition des polices personnalisées*/
 
-/*
-* {
-  margin: 0;
-}
-
-*/
 body,
 h1,
 h2,
@@ -20,13 +14,11 @@ li {
   font-family: 'Raleway', sans-serif;
 }
 
-
 body {
-  margin:  auto;
+  margin: auto;
 }
 
-
-/*Elémens principaux de la page*/
+/* Elémens principaux de la page*/
 
 section h1,
 footer h1,
@@ -57,21 +49,6 @@ nav {
   margin: -1rem 0 0 0;
 }
 
-/*
-nav a {
-  height: 3rem;
-  display: block;
-  font-size: 1.1rem;
-  text-decoration: none;
-  width: 50%;
-  border-bottom: 3px solid #f2f2f2;
-  text-align: center;
-  margin-top: -1rem;
-  padding-top: 1rem;
-  border-top: 2px solid transparent;
-}
-*/
-
 nav a {
   height: 3rem;
   display: block;
@@ -83,14 +60,6 @@ nav a {
   border-top: 2px solid transparent;
 }
 
-
-/*
-nav a:hover {
-  color: #0065fc;
-  border-top: 3px solid transparent;
-  border-bottom: 3px solid #0065fc;
-}
-*/
 nav a:hover {
   color: #0065fc;
   border-top: 3px solid transparent;
@@ -110,25 +79,10 @@ nav a.sinscrire:hover {
   border-bottom: 2px solid transparent;
 }
 
-/*
-nav a.sinscrire {
-  order: -2;
-  margin-left: 50%;
-  margin-top: 0.7rem;
-  padding-top: 2rem;
-  padding-left: 5rem;
-}
-
-nav a.sinscrire,
-nav a.sinscrire:hover {
-  border-bottom: 2px solid transparent;
-}
-*/
 /* Section recherche */
 
 section#research {
-  margin-top: 40px;
-  margin-left: 1.2rem;
+  margin: 2rem 0.5rem 0 0.9rem;
 }
 
 section#research h1,
@@ -138,6 +92,7 @@ section#research p {
 
 .around_input {
   display: flex;
+  justify-content: center;
   padding-top: 15px;
   padding-bottom: 30px;
   margin-top: 1.5rem;
@@ -154,21 +109,24 @@ section#research p {
 
 input[type='text'] {
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-right: -20px;
-  border: 1px solid #ddd;
+  border: 2px solid #f2f2f2;
   border-radius: 2px;
   font-family: 'Raleway', sans-serif;
 }
 #name {
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
+}
+
+section#research p {
+  font-weight: bold;
 }
 
 .recherche {
   color: #fff;
-  font-size: 1.2rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 1.1rem;
   background-color: #0065fc;
   border-radius: 1rem;
   font-family: 'Font Awesome 5 Free';
@@ -180,24 +138,14 @@ input[type='text'] {
   content: '\f002';
 }
 
-.elmt-1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-
-
-
-
-
-.links-1 {
+filtre a {
+  color: #000;
   text-decoration: none;
 }
 
 filtre:hover {
   background-color: #deebff;
 }
-
 
 .filtre {
   display: block;
@@ -211,19 +159,13 @@ filtre:hover {
   font-weight: bold;
 }
 
-
 filtre {
-  border: 2px solid #f2f2f2;
+  border: 3px solid #f2f2f2;
   margin: 0.5rem 0.5rem 0.5rem 0.6rem;
   display: inline-block;
   padding-right: 0.75rem;
   border-radius: 3rem;
   font-family: 'Raleway', sans-serif;
-}
-
-
-.links-1 {
-  text-decoration: none;
 }
 
 filtre:hover {
@@ -285,15 +227,12 @@ section#activitesamarseilles {
   order: 1;
 }
 
-
 /* Corps Section Les plus populaires */
 
 main {
   display: flex;
   flex-direction: column;
-  /*margin: 0rem 1.2rem 0rem 1.2rem;*/
 }
-
 
 .progression {
   display: flex;
@@ -306,51 +245,44 @@ i.fas.fa-chart-line {
 }
 
 .fa-chart-line:before {
-  content: "\f201";
+  content: '\f201';
   margin-left: -3rem;
 }
 
 section#popular {
-  /*display: flex;
-  flex-wrap: wrap;*/
   background-color: #f2f2f2;
   padding-bottom: 1.5rem;
 }
 
-
-
-/*ncode section populaires*/
-
-section#popular article {
- /* width: 84%;
-  background-size: cover !important;*/
-  border-radius: 1.4rem !important;
-  border: 6px solid white;
-  margin: 0rem 1.2rem .8rem 1.4rem;
+section#popular h1 {
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
 }
 
+section#popular article {
+  border-radius: 1.4rem !important;
+  border: 6px solid white;
+  margin: 0rem 1.2rem 0.8rem 1.4rem;
+}
 
 .overlaypopulaires {
   background-color: white;
   margin-left: 9rem;
-  height: 9rem;
 }
 
-section#popular h4, section#popular p {
-
+section#popular h4,
+section#popular p {
   margin: 0;
-  padding-left: 1rem;
-  padding-top: 1rem;
+  padding: 1rem 0 0 1rem;
 }
 
-section#popular aside{
-  padding-top: 1rem;
-  padding-left: 1rem;
+section#popular p {
+  font-size: 0.8rem;
+}
+
+section#popular aside {
+  padding: 1.5rem 0.5rem 1rem 1rem;
   color: #0065fc;
-}
-
-section#popular h1 {
-  padding: .5rem 0rem 0.5rem 1.5rem;
+  font-size: small;
 }
 
 section#popular article.hotel_le_soleil_du_matin {
@@ -368,47 +300,41 @@ section#popular article.hotel_tout_bleu_et_blanc {
 
 /* Section hebergements à Marseilles */
 
-/*ncode section populaires*/
-
-section#hebergements h1 {
-  text-align: center;
-  margin-left: -2rem;
-}
-
-section#hebergements article {
-  /* width: 84%;
-   background-size: cover !important;*/
-   border-radius: 1.4rem !important;
-   border: 6px solid white;
-   margin: 0rem 1.2rem .8rem 1.4rem;
-   box-shadow: 0px 6px 6px 6px #f2f2f2;
- }
- 
- 
- .overlaymarseilles {
-   background-color: white;
-   margin-top: 8rem;
-   
- }
- 
- section#hebergements h4, section#hebergements p {
- 
-   margin: 0;
-   padding-left: 1rem;
-   padding-top: .5rem;
- }
- 
- section#hebergements aside{
-   padding-top: .5rem;
-   padding-left: 1rem;
-   color: #0065fc;
- }
- 
- /*fnewcode*/
-
 section#hebergements {
   display: flex;
   flex-direction: column;
+}
+
+section#hebergements h1 {
+  margin-left: 1.5rem;
+}
+
+section#hebergements article {
+  border-radius: 1.4rem !important;
+  border: 6px solid white;
+  margin: 0rem 1.2rem 0.8rem 1.4rem;
+  box-shadow: 0px 6px 6px 6px #f2f2f2;
+}
+
+.overlaymarseilles {
+  background-color: white;
+  margin-top: 8rem;
+}
+
+section#hebergements h4,
+section#hebergements p {
+  margin: 0;
+  padding: 1rem 0 0 1rem;
+}
+
+section#hebergements p {
+  font-size: 0.9rem;
+}
+
+section#hebergements aside {
+  padding: 1rem 0.5rem 1rem 1rem;
+  color: #0065fc;
+  font-size: small;
 }
 
 article.cannebiere {
@@ -451,84 +377,34 @@ section#hebergements a {
 }
 
 /* Section Activités à Marseilles */
-/*
-section#activitesamarseilles {
-  order: 1;
-  width: auto;
-  margin-top: 10rem;
-}
-*/
 
 section#activitesamarseilles {
   margin-top: 2rem;
 }
 
-
-/*ncode section activités marseilles*/
-
-section#activitesamarseilles article {
-  /* width: 84%;
-   background-size: cover !important;*/
-   border-radius: 1.4rem !important;
-   border: .5px solid #f2f2f2;
-   margin: 0rem 1.2rem .8rem 1.4rem;
-   box-shadow: 0px 6px 6px 6px #f2f2f2;
- }
- 
- 
- .overlayactivitesmarseilles{
-   background-color: white;
-   margin-top: 9rem;
-   border-radius: 0 0 1.2rem 1.2rem;
-   
- }
- 
- section#activitesamarseilles h4 {
- 
-   margin: 0;
-   padding-left: 1rem;
-   padding: 1rem;
- }
- /*
- section#activitesamarseilles aside{
-   padding-top: .5rem;
-   padding-left: 1rem;
-   color: #0065fc;
- }
- */
- /*fnewcode*/
-
- 
-
 section#activitesamarseilles h1 {
-  text-align: center;
-  margin-left: -7rem;
-  margin-bottom: 1.5rem;
-}
-
-/*
-section#activitesamarseilles article *{
-  background-color: white;
+  margin: 0 0 1.5rem 1.3rem;
 }
 
 section#activitesamarseilles article {
-  width: 87%;
-  margin-bottom: 1rem;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
   border-radius: 1.4rem !important;
-  border: .1px solid #f2f2f2;
-  margin: 0rem 1.2rem 1.4rem 1.4rem;
+  border: 0.5px solid #f2f2f2;
+  margin: 0rem 1.2rem 0.8rem 1.4rem;
   box-shadow: 0px 6px 6px 6px #f2f2f2;
 }
 
-section#activitesamarseilles article h4{
-  margin: 10rem 0 0 0;
-  padding: 1.5rem;
-  border-radius: 0 0 1rem 1rem;
-
+.overlayactivitesmarseilles {
+  background-color: white;
+  margin-top: 9rem;
+  border-radius: 0 0 1.2rem 1.2rem;
 }
-*/
+
+section#activitesamarseilles h4 {
+  margin: 0;
+  padding-left: 1rem;
+  padding: 1rem;
+}
+
 section#activitesamarseilles .pomegues_frioul,
 .notredame_longchamp {
   display: flex;
@@ -594,37 +470,21 @@ footer a {
   text-decoration: none;
 }
 
-
 @media screen and (min-width: 768px) {
-  
-/*
-*{
-  border: 1px solid blue;
-}
-*/
-  /*body {
-    margin-left: 1rem;
-    margin-right: 0;
-  }*/
-
-  header {
-    padding: 1rem;
-    margin-top: 3rem;
-  }
   nav {
     margin-top: 1rem;
   }
 
-  nav a:hover {
-    color: #0065fc;
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid #0065fc;
-  }
-
   nav a {
     width: 20%;
-    border-top: 2px solid transparent;
+    color: #000;
+    text-align: center;
+    border-top: 3px solid transparent;
     border-bottom: none;
+  }
+
+  nav a:hover {
+    border-bottom: 3px solid transparent;
   }
 
   nav a.sinscrire {
@@ -637,129 +497,65 @@ footer a {
     border-radius: 0 0.7rem 0.7rem 0;
   }
   .recherche::after {
-    content: 'rechercher';
+    content: 'Rechercher';
     font-family: 'Raleway', sans-serif;
   }
 
-filtre{
-  margin: 0.5rem 0.1rem 0.5rem 0.6rem;
-}
+  .around_input {
+    justify-content: initial;
+  }
 
-/* Section Les plus populaires */
-/*
-main {
-  margin: 0;
-}
-*/
-/* Corps Section populaires */
+  filtre {
+    margin: 0.5rem 0.1rem 0.5rem 0.6rem;
+  }
 
+  /* Section Les plus populaires */
 
-/*
-section#popular {
-  display: flex;
-  flex-wrap: wrap;
-  /*width: auto;*/
-  /*justify-content: center;
-}*/
+  section#popular .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-section#popular .wrapper{
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+  section#popular h1 {
+    padding-left: 0.8rem;
+  }
 
+  .progression {
+    width: 100%;
+  }
 
-/*ncode section populaires */
+  .fas.fa-chart-line {
+    margin-left: -4rem;
+    margin-right: 0rem;
+  }
 
-section#popular article {
-  width: 28%;
-  margin: 0 0 1.6rem 0;
-  /* border-radius: 1.4rem !important;
-   border: 6px solid white;
-   margin: 0rem 1.2rem .8rem 1.4rem;
-   box-shadow: 0px 6px 6px 6px #f2f2f2;*/
- }
- 
+  section#popular article {
+    width: 28%;
+    margin: 0 0 1.6rem 0;
+  }
 
- .overlaypopulaires {
-   margin-top: 8rem;
-   margin-left: 0;
-   
- }
- 
- section#popular h4, section#popular p {
- 
-   margin: 0;
-   padding-left: 1rem;
-   padding-top: .5rem;
- }
+  .overlaypopulaires {
+    margin-top: 8rem;
+    margin-left: 0;
+    height: 9rem;
+  }
 
- section#popular aside{
-   padding-top: 2.5rem;
-   padding-left: 1rem;
-   color: #0065fc;
- }
+  /* Section hébergements */
 
-/*fnewcode*/
+  section#hebergements .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-/*
-section#popular article {
-  width: 28% !important;
-  margin: 0 0 1.5rem 1.2rem;
-}
+  section#hebergements h1 {
+    width: 100%;
+  }
 
-section#popular article h4 {
-  margin: 8rem 0 0 0;
-}
-
-section#popular article p {
-  margin: 0;
-}
-
-section#popular article aside {
-  padding: 0 !important;
-}
-
-section#popular article aside {
-  height: 1.5rem;
-  margin: 0;
-  padding: 0 0 0 1rem !important;
-}
-*/
-
-
-section#popular h1 {
-  padding-left: 0.8rem;
-}
-
-.progression {
-  width: 100%;
-}
-
-.fas.fa-chart-line {
-  margin-left: -4rem;
-  margin-right: 0rem;
-}
-
-/* Section hébergements */
-
-section#hebergements .wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-section#hebergements article {
-  width: 28%;
-  margin: 0 0 1.6rem 0;
-}
-
-
-section#hebergements h1 {
-  width: 100%;
-  text-align: left;
-  padding-left: 3rem;
+  section#hebergements article {
+    width: 27%;
+    margin: 0 0 1.6rem 0;
   }
 
   section#hebergements a {
@@ -769,67 +565,98 @@ section#hebergements h1 {
     margin-left: 1.5rem;
   }
 
-section#activitesamarseilles article{
-  width: 27.5vw;
+  /* section activités à Marseilles */
 
-}
-
-section#activitesamarseilles h1 {
-  width: 100%;
-  margin-left: -15.5rem;
+  .activities {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-.overlayactivitesmarseilles {
-  border-radius: 0 0 1.3rem 1.3rem;
+  section#activitesamarseilles article {
+    width: 27.5vw;
+  }
+
+  section#activitesamarseilles h4 {
+    font-size: 0.7rem;
+  }
+
+  .overlayactivitesmarseilles {
+    border-radius: 0 0 1.3rem 1.3rem;
+  }
+
+  section#activitesamarseilles .pomegues_frioul,
+  .notredame_longchamp {
+    flex-direction: initial;
+  }
+
+  /* Footer */
+
+  footer {
+    flex-direction: initial;
+    justify-content: initial;
+  }
+
+  footer section {
+    margin: 0 4rem 0 0;
+  }
 }
 
-.overlayactivitesmarseilles .p_lonchamp{
-  padding-top: 2.2rem !important;
-}
+@media screen and (min-width: 1280px) {
+  header {
+    margin: 0 0 0 0.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+  }
+  nav {
+    margin: 0px;
+  }
 
-/* essai*/
-.activities {
-  display: flex;
-  flex-wrap: wrap;
-}
+  nav a {
+    width: 11%;
+    padding-top: 2rem;
+  }
 
-/*fessaie*/
+  nav a:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+  }
 
+  nav a.sinscrire {
+    padding-top: 2rem;
+  }
 
+  section#research {
+    padding-left: 1rem;
+    margin-top: 5rem;
+  }
 
+  p.p_filtre {
+    padding-top: 1rem;
+  }
 
-section#activitesamarseilles .pomegues_frioul, .notredame_longchamp{
+  .filtre {
+    display: flex;
+    align-items: baseline;
+  }
+  filtre {
+    margin: 0.5rem 1rem 0.5rem 0.6rem;
+    padding-right: 1.5rem;
+  }
 
-  flex-direction: initial;
-}
+  filtre::before {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
 
-
-/* Footer */
-
-footer {
-  flex-direction: initial;
-  margin-left: -3rem;
-}
-
-footer section {
-  margin-left: -2rem;
-}
-
-}
-
-@media screen and (min-width: 1280px){
-  /*
-    *{
-    border: 1px solid blue;
-  }*/
-
-  main{
+  main {
     flex-direction: initial;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+  }
 
-/* Section Hébergements à Marseilles */
+  /* Section Hébergements à Marseilles */
 
   section#hebergements {
     order: initial;
@@ -838,112 +665,109 @@ footer section {
   section#hebergements {
     width: 63%;
     justify-content: initial;
+  }
+
+  section#hebergements .wrapper {
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    justify-content: initial;
+  }
+
+  section#hebergements article {
+    margin: 1rem 0.5rem 0.7rem 1.6rem;
+  }
+
+  /* Section populaires*/
+
+  section#popular {
+    width: 30%;
+    border-radius: 1rem;
+  }
+
+  .overlaypopulaires {
+    margin-left: 9rem;
+    margin-top: 0;
+    height: 9rem;
+  }
+
+  section#popular article {
+    width: 80%;
+  }
+
+  section#popular h1 {
+    margin: 12px 0 24px 27px;
+  }
+
+  /* Section activités à Marseilles */
+
+  section#activitesamarseilles .wrapper {
+    margin-top: 1rem;
+  }
+
+  .activities {
+    flex-wrap: nowrap;
+  }
+
+  section#activitesamarseilles .pomegues_frioul,
+  section#activitesamarseilles .notredame_longchamp {
+    display: block;
+  }
+
+  section#activitesamarseilles article {
+    width: 21.5vw;
+  }
+
+  section#activitesamarseilles article.fort_de_pomegues {
+    height: 230px;
+    margin-bottom: 3rem;
+  }
+
+  section#activitesamarseilles article.iles_du_frioul {
+    height: 214px;
+  }
+
+  section#activitesamarseilles article.notre_dame {
+    height: 205px;
+    margin-bottom: 3rem;
+  }
+
+  section#activitesamarseilles article.parc_longchamp {
+    height: 241px;
+  }
+
+  .overlayactivitesmarseilles .p_lonchamp {
+    padding-top: 0 !important;
+  }
+
+  section#activitesamarseilles h4 {
+    font-size: initial;
+  }
+
+  section#activitesamarseilles h4 {
+    padding: 1.5rem !important;
+  }
+  section#activitesamarseilles .le_vieux_port h4,
+  section#activitesamarseilles .parc_national_des_calanques h4 {
+    margin-top: 26.9rem;
+  }
+
+  section#activitesamarseilles .ifrioul {
+    margin-top: 9.5rem;
+  }
+
+  section#activitesamarseilles .pomegues {
+    margin-top: 10.2rem;
+  }
+
+  section#activitesamarseilles .notre_dame_la_garde {
+    margin-top: 9rem;
+  }
+
+  section#activitesamarseilles .p_lonchamp {
+    margin-top: 11rem;
+  }
+
+  footer section {
+    margin: 0 14rem 0 1rem;
+  }
 }
-
-section#hebergements .wrapper{
-  background-color: #f2f2f2;
-  border-radius: 1rem;
-  justify-content: initial;
-}
-
-section#hebergements article {
-  margin: 0 0 .7rem 1.2rem;
-}
-
-section#hebergements h1 {
-  margin-left: 1.5rem;
-}
-
-
-/* Section populaires*/
-
-section#popular{
-  width: 30%;
-  border-radius: 1rem;
-}
-
-section#popular article {
-  width: 80%;
-}
-
-section#popular h1 {
-  margin: 12px;
-}
-
-.overlaypopulaires {
-  margin-left: 9rem;
-  margin-top: 0;
-  height: 9rem;
-
-}
-
-
-/* Section activités à Marseilles */
-
-.activities {
-  flex-wrap: nowrap;
-}
-
-section#activitesamarseilles .pomegues_frioul, 
-section#activitesamarseilles .notredame_longchamp {
-  display: list-item;
-}
-
-section#activitesamarseilles article {
-  width: 21.5vw;
-}
-
-section#activitesamarseilles article.fort_de_pomegues{
-  height: 230px ;
-  margin-bottom: 3rem;
-}
-
-section#activitesamarseilles article.iles_du_frioul{
-  height:214px ;
-}
-
-section#activitesamarseilles article.notre_dame{
-  height: 205px;
-  margin-bottom: 3rem;
-}
-
-section#activitesamarseilles article.parc_longchamp{
-  height: 241px;
-}
-
-.overlayactivitesmarseilles .p_lonchamp {
-  padding-top: 0 !important;
-}
-
-section#activitesamarseilles h4 {
-  padding: 1.5rem !important;
-}
-section#activitesamarseilles .le_vieux_port h4,
-section#activitesamarseilles .parc_national_des_calanques h4{
-     
-  margin-top: 26.9rem;
-}
-
-section#activitesamarseilles .ifrioul{
-  margin-top: 9.5rem;
-}
-
-
-section#activitesamarseilles .pomegues{
-  margin-top: 10.2rem;
-}
-
-section#activitesamarseilles .notre_dame_la_garde{
-  margin-top: 9rem;
-}
-
-section#activitesamarseilles .p_lonchamp{
-  margin-top: 11rem;
-}
-
-
-
-
-
-}
-
