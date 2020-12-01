@@ -696,6 +696,7 @@ section#hebergements a {
 
   section#hebergements h1 {
     margin-left: 2rem;
+    margin-bottom: -.1rem;
 }
 
   .figurehebergement{
@@ -729,7 +730,7 @@ section#popular h1 {
 }
 
 .figurepopulaires{
-  padding: 6px;
+  padding: 5px;
   display: flex;
   width: initial;
 }
